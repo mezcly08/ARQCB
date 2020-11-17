@@ -20,6 +20,7 @@ intended publication of this material.
 #include <xc.h>
 #include <pic18f4550.h>  /*Header file PIC18f4550 definitions*/
 #include "fuses.h"
+#include "pinout.h"
 
 void secuencial_Efecto1(void);
 void secuencial_Efecto2(void);
@@ -29,18 +30,27 @@ void secuencial_Efecto4(void);
 unsigned char efecto = 1;
 unsigned long velocidad = 1;
 
+
+
+#define INPUT 1
+#define OUTPUT 0
+
+#define HIGH 1
+#define LOW 0
+
 int main(void) {
     TRISD = 0;
     LATD = 0;
-    TRISBbits.TRISB7 = 1;
-    TRISBbits.TRISB6 = 1;
+    efecto_pin = INPUT;
+    velocidad_pin = INPUT;
     INTCON2bits.RBPU = 0;
     while (1) {
         //efecto
-        if (!PORTBbits.RB7) {
+        if (!efecto_value) {
             __delay_ms(50);
             if(++efecto==5){efecto=1;}
         }
+        
         switch (efecto) {
             case 1: secuencial_Efecto1();
                 break;
@@ -105,7 +115,7 @@ void secuencial_Efecto4(void) {
     for (int i = 0; i < 5; i++) {
         LATD = m+n;
         m += (1 << i) & 0x0f;
-        n += (1 >> (7-i)) & 0xf0;
+        n += (1 << (7-i)) & 0xf0;
         if(velocidad==1){__delay_ms(50);}
         else if(velocidad==2){__delay_ms(100);}
         else if(velocidad==3){__delay_ms(200);}

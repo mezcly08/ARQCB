@@ -5,6 +5,7 @@
                    displayName="Header Files"
                    projectFiles="true">
       <itemPath>fuses.h</itemPath>
+      <itemPath>pinout.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -130,15 +131,13 @@
         <property key="stack-size-main" value="auto"/>
         <property key="stack-type" value="compiled"/>
       </XC8-config-global>
-      <item path="gpio_main.c" ex="false" overriding="false">
+      <item path="gpio_main.c" ex="true" overriding="false">
         <HI-TECH-COMP>
         </HI-TECH-COMP>
         <HI-TECH-LINK>
         </HI-TECH-LINK>
         <XC8-config-global>
         </XC8-config-global>
-      </item>
-      <item path="secuencia_main.c" ex="true" overriding="false">
       </item>
     </conf>
   </confs>

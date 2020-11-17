@@ -3,11 +3,11 @@ Microchip MPLAB XC8 Compiler V1.41 ()
 Linker command line:
 
 -W-3 --edf=D:\mplab\dat\en_msgs.txt -cs \
-  -h+dist/default/production\gpio.X.production.sym \
-  --cmf=dist/default/production\gpio.X.production.cmf -z -Q18F4550 \
-  -oC:\Users\ASUS\AppData\Local\Temp\s39c.2 \
-  -Mdist/default/production/gpio.X.production.map -E1 -ver=XC8 \
-  -ASTACK=060h-07ffh -pstack=STACK -ACODE=00h-07FFFh -ACONST=00h-07FFFh \
+  -h+dist/default/debug\gpio.X.debug.sym \
+  --cmf=dist/default/debug\gpio.X.debug.cmf -z -Q18F4550 \
+  -oC:\Users\ASUS\AppData\Local\Temp\s1lg.2 \
+  -Mdist/default/debug/gpio.X.debug.map -E1 -ver=XC8 -ASTACK=060h-07ffh \
+  -pstack=STACK -ACODE=00h-07FFFh -ACONST=00h-07FFFh \
   -ASMALLCONST=0800h-08FFhx120 -AMEDIUMCONST=0800h-07FFFh -ACOMRAM=01h-05Fh \
   -AABS1=00h-07FFh -ABIGRAM=01h-07FFh -ARAM=060h-0FFh,0100h-01FFhx7 \
   -ABANK0=060h-0FFh -ABANK1=0100h-01FFh -ABANK2=0200h-02FFh \
@@ -22,8 +22,8 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
-  C:\Users\ASUS\AppData\Local\Temp\s39c.obj \
-  dist/default/production\gpio.X.production.obj 
+  C:\Users\ASUS\AppData\Local\Temp\s1lg.obj \
+  dist/default/debug\gpio.X.debug.obj 
 
 Object code version is 3.11
 
@@ -35,11 +35,11 @@ Call graph: (short form)
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\ASUS\AppData\Local\Temp\s39c.obj
+C:\Users\ASUS\AppData\Local\Temp\s1lg.obj
                 init                                  0        0        4        0       0
                 idloc                            200000   200000        8   200000       0
                 config                           300000   300000        E   300000       0
-dist/default/production\gpio.X.production.obj
+dist/default/debug\gpio.X.debug.obj
                 text0                              7FD0     7FD0       30     3FE8       0
                 cstackCOMRAM                          6        6        1        1       1
                 dataCOMRAM                            1        1        5        1       1

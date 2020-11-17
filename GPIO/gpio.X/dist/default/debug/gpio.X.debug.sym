@@ -203,9 +203,9 @@ text0 7FD0 7FFF CODE 7FD0 0
 cinit 7FAA 7FCF CODE 7FAA 0
 idataCOMRAM 7FA5 7FA9 CODE 7FA5 0
 %locals
-dist/default/production\gpio.X.production.obj
+dist/default/debug\gpio.X.debug.obj
 D:\mplab\include\pic18f4550.h
-C:\Users\ASUS\AppData\Local\Temp\s39c.
+C:\Users\ASUS\AppData\Local\Temp\s1lg.
 486 7FAA 0 CODE 0
 488 7FAA 0 CODE 0
 491 7FAA 0 CODE 0
