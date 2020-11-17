@@ -27,6 +27,7 @@ void secuencial_Efecto2(void);
 void secuencial_Efecto3(void);
 void secuencial_Efecto4(void);
 void secuencial_Efecto5(void);
+void secuencial_Efecto6(void);
 
 unsigned char efecto = 1;
 unsigned long velocidad = 1;
@@ -49,7 +50,7 @@ int main(void) {
         //efecto
         if (!efecto_value) {
             __delay_ms(50);
-            if(++efecto==5){efecto=1;}
+            if(++efecto==7){efecto=1;}
         }
         
         switch (efecto) {
@@ -62,6 +63,8 @@ int main(void) {
             case 4: secuencial_Efecto4();
                 break;
             case 5: secuencial_Efecto5();
+                break;
+            case 6: secuencial_Efecto6();
                 break;
         }
     }
@@ -130,9 +133,25 @@ void secuencial_Efecto4(void) {
         }
     }
 }
+
 void secuencial_Efecto5(void) {
-    for (int i = 0, j = 7; i < 8; i++, j--) {
-        LATD = (1 << j);
+    for (int i = 7; i > -1 ; i--) {
+        LATD = (1 << i);
+        if(velocidad==1){__delay_ms(50);}
+        else if(velocidad==2){__delay_ms(100);}
+        else if(velocidad==3){__delay_ms(200);}
+        else if(velocidad==4){__delay_ms(400);}
+        //velocidad
+        if (!PORTBbits.RB6) {
+            __delay_ms(50);
+            if(++velocidad==5){velocidad=1;}
+        }
+    }
+}
+
+void secuencial_Efecto6(void) {
+     for (int i = 0; i < 8 ; i++) {
+        if(i % 2 == 0){ LATD = (1 << i); } //% es mod
         if(velocidad==1){__delay_ms(50);}
         else if(velocidad==2){__delay_ms(100);}
         else if(velocidad==3){__delay_ms(200);}
