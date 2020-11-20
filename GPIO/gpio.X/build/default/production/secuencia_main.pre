@@ -4804,12 +4804,11 @@ void secuencial_Efecto4(void);
 unsigned char efecto = 1;
 unsigned long velocidad = 1;
 
-# 41
 int main(void) {
 TRISD = 0;
 LATD = 0;
 TRISBbits.TRISB7 = 1;
-TRISBbits.TRISB6 = 1;
+TRISBbits.TRISB6 = 0;
 INTCON2bits.RBPU = 0;
 while (1) {
 
@@ -4818,7 +4817,16 @@ _delay((unsigned long)((50)*(8000000/4000.0)));
 if(++efecto==5){efecto=1;}
 }
 
-# 64
+switch (efecto) {
+case 1: secuencial_Efecto1();
+break;
+case 2: secuencial_Efecto2();
+break;
+case 3: secuencial_Efecto3();
+break;
+case 4: secuencial_Efecto4();
+break;
+}
 }
 return 1;
 }

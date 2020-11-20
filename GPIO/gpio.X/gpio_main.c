@@ -1,8 +1,8 @@
 /*!
-\file   Blink.c
-\date   2020-11-13
+\file   Gpio_Main.c
+\date   2020-11-18
 \author Fulvio Vivas <fulvio.vivas@unicauca.edu.co>
-\brief  Example blink.
+\brief  Example GPIO.
 
 \par Copyright
 Information contained herein is proprietary to and constitutes valuable
@@ -21,6 +21,7 @@ intended publication of this material.
 #include <pic18f4550.h>  /*Header file PIC18f4550 definitions*/
 #include "fuses.h"
 
+/*
 #define INPUT 1
 #define OUTPUT 0
 
@@ -36,7 +37,7 @@ intended publication of this material.
 
 #define ON_LED 1
 #define OFF_LED 0
-
+*/
 
 int main(void) {
     OSCCON=0x72;       /* Use internal oscillator of 8MHz Frequency */
@@ -46,16 +47,21 @@ int main(void) {
     TRISDbits.TRISD5 = 0;
     TRISDbits.TRISD4 = 0;
     //Configura los pines RB7-RB6-RB5-RB4 como entrada digital
-    s1 = INPUT;
-    s2 = INPUT;
-    s3 = INPUT;
-    s4 = INPUT;
+    TRISBbits.TRISB7 = 1;
+    TRISBbits.TRISB6 = 1;
+    TRISBbits.TRISB5 = 1;
+    TRISBbits.TRISB4 = 1;
 
     while (1) {
-        if(!s4_read){LATDbits.LATD4=1;}else{LATDbits.LATD4=0;}
-        if(!s3_read){LATDbits.LATD5=1;}else{LATDbits.LATD5=0;}
-        if(!s2_read){LATDbits.LATD6=1;}else{LATDbits.LATD6=0;}
-        if(!s1_read){LATDbits.LATD7=1;}else{LATDbits.LATD7=0;}
+        if(!PORTBbits.RB4){
+            LATDbits.LATD4=1;
+        }
+        else{
+            LATDbits.LATD4=0;
+        }
+        if(!PORTBbits.RB5){LATDbits.LATD5=1;}else{LATDbits.LATD5=0;}
+        if(!PORTBbits.RB6){LATDbits.LATD6=1;}else{LATDbits.LATD6=0;}
+        if(!PORTBbits.RB7){LATDbits.LATD7=1;}else{LATDbits.LATD7=0;}
     }
     return 1;
 }

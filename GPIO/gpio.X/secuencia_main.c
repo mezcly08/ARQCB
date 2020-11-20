@@ -31,22 +31,15 @@ unsigned char efecto = 1;
 unsigned long velocidad = 1;
 
 
-
-#define INPUT 1
-#define OUTPUT 0
-
-#define HIGH 1
-#define LOW 0
-
 int main(void) {
-    TRISD = 0;
-    LATD = 0;
-    efecto_pin = INPUT;
-    velocidad_pin = INPUT;
+    CFG_LEDS = OUTPUT;
+    LEDS = OFF;
+    BTN_EFECTO = INPUT;
+    TRISBbits.TRISB6 = 0;
     INTCON2bits.RBPU = 0;
     while (1) {
         //efecto
-        if (!efecto_value) {
+        if (!PORTBbits.RB7) {
             __delay_ms(50);
             if(++efecto==5){efecto=1;}
         }
@@ -61,6 +54,7 @@ int main(void) {
             case 4: secuencial_Efecto4();
                 break;
         }
+        
     }
     return 1;
 }

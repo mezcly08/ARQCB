@@ -23,8 +23,16 @@
 [v ___flmul __flmul `(d  1 e 3 0 ]
 "15 D:\mplab\sources\common\Umul32.c
 [v ___lmul __lmul `(ul  1 e 4 0 ]
-"41 C:\Users\ASUS\Documents\GitHub\ARQCB\GPIO\gpio.X\secuencia_main.c
+"33 C:\Users\ASUS\Documents\GitHub\ARQCB\GPIO\gpio.X\secuencia_main.c
 [v _main main `(i  1 e 2 0 ]
+"60
+[v _secuencial_Efecto1 secuencial_Efecto1 `(v  1 e 1 0 ]
+"75
+[v _secuencial_Efecto2 secuencial_Efecto2 `(v  1 e 1 0 ]
+"90
+[v _secuencial_Efecto3 secuencial_Efecto3 `(v  1 e 1 0 ]
+"105
+[v _secuencial_Efecto4 secuencial_Efecto4 `(v  1 e 1 0 ]
 [s S32 . 1 `uc 1 RB0 1 0 :1:0 
 `uc 1 RB1 1 0 :1:1 
 `uc 1 RB2 1 0 :1:2 
@@ -88,8 +96,40 @@
 [v _efecto efecto `uc  1 e 1 0 ]
 "31
 [v _velocidad velocidad `ul  1 e 4 0 ]
-"41
+"33
 [v _main main `(i  1 e 2 0 ]
 {
-"66
+"58
+} 0
+"105
+[v _secuencial_Efecto4 secuencial_Efecto4 `(v  1 e 1 0 ]
+{
+"107
+[v secuencial_Efecto4@i i `i  1 a 2 3 ]
+"106
+[v secuencial_Efecto4@n n `VEui  1 a 2 7 ]
+[v secuencial_Efecto4@m m `VEui  1 a 2 5 ]
+"121
+} 0
+"90
+[v _secuencial_Efecto3 secuencial_Efecto3 `(v  1 e 1 0 ]
+{
+"91
+[v secuencial_Efecto3@i i `i  1 a 2 2 ]
+"103
+} 0
+"75
+[v _secuencial_Efecto2 secuencial_Efecto2 `(v  1 e 1 0 ]
+{
+"76
+[v secuencial_Efecto2@i i `i  1 a 2 6 ]
+[v secuencial_Efecto2@j j `i  1 a 2 4 ]
+"88
+} 0
+"60
+[v _secuencial_Efecto1 secuencial_Efecto1 `(v  1 e 1 0 ]
+{
+"61
+[v secuencial_Efecto1@i i `i  1 a 2 2 ]
+"73
 } 0
