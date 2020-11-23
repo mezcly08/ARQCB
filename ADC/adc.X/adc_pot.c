@@ -5,8 +5,10 @@
 void main(void) {
     TRISD = 0x00;
     TRISA = 0xFF;
+    //OSCCON = 0x72;
     OSCCONbits.IRCF = 0b111; //Configura oscilador interno (FOSC = 8Mhz)
     OSCCONbits.SCS = 0b10; // Oscilador del sistema = Fosc interno
+    
     ADCON1bits.PCFG = 0b1110; //  Configura el Puerto como Entrada Analógica.
     ADCON1bits.VCFG = 0b00; //  Selecciona Voltajes de Referencia (5v-0v).
     ADCON0bits.CHS = 0b0000; //  Selecciona el Canal Analógico.
