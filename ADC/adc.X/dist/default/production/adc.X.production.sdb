@@ -3,6 +3,7 @@
 [d edition pro ]
 [d chip 18F4550 ]
 [d frameptr 4065 ]
+<<<<<<< HEAD
 "5 C:\Users\Mari\Documents\GitHub\ARQCB\ADC\adc.X\adc_pot.c
 [v _main main `(v  1 e 1 0 ]
 "4 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\fleq.c
@@ -19,6 +20,22 @@
 [v ___ftsub __ftsub `(f  1 e 4 0 ]
 "10 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\sprcadd.c
 [v ___fladd __fladd `(d  1 e 4 0 ]
+=======
+"5 C:\Users\ASUS\Documents\GitHub\ARQCB\ADC\adc.X\adc_pot.c
+[v _main main `(v  1 e 1 0 ]
+"62 D:\mplab\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 D:\mplab\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"54 D:\mplab\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"62 D:\mplab\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"20 D:\mplab\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"10 D:\mplab\sources\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 3 0 ]
+>>>>>>> 52d139fa3ee4e18d1a24ab34a3c8c66ff3bc03e8
 "245
 [v ___flsub __flsub `(d  1 e 4 0 ]
 "11 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\sprcdiv.c
@@ -27,9 +44,13 @@
 [v ___flmul __flmul `(d  1 e 4 0 ]
 "15 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul32.c
 [v ___lmul __lmul `(ul  1 e 4 0 ]
+<<<<<<< HEAD
 "91 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul64.c
 [v ___omul __omul `(uo  1 e 8 0 ]
 "3263 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h
+=======
+"3221 D:\mplab\include\pic18f4550.h
+>>>>>>> 52d139fa3ee4e18d1a24ab34a3c8c66ff3bc03e8
 [v _LATD LATD `VEuc  1 e 1 @3980 ]
 "3427
 [v _TRISA TRISA `VEuc  1 e 1 @3986 ]
@@ -98,9 +119,15 @@
 [s S119 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 GODONE 1 0 :1:1 
 ]
+<<<<<<< HEAD
 [u S122 . 1 `S93 1 . 1 0 `S96 1 . 1 0 `S100 1 . 1 0 `S107 1 . 1 0 `S110 1 . 1 0 `S113 1 . 1 0 `S116 1 . 1 0 `S119 1 . 1 0 ]
 [v _ADCON0bits ADCON0bits `VES122  1 e 1 @4034 ]
 "6799
+=======
+[u S119 . 1 `S90 1 . 1 0 `S93 1 . 1 0 `S97 1 . 1 0 `S104 1 . 1 0 `S107 1 . 1 0 `S110 1 . 1 0 `S113 1 . 1 0 `S116 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES119  1 e 1 @4034 ]
+"6711
+>>>>>>> 52d139fa3ee4e18d1a24ab34a3c8c66ff3bc03e8
 [v _ADRESH ADRESH `VEuc  1 e 1 @4036 ]
 [s S26 . 1 `uc 1 SCS 1 0 :2:0 
 `uc 1 IOFS 1 0 :1:2 
@@ -117,10 +144,19 @@
 `uc 1 IRCF1 1 0 :1:5 
 `uc 1 IRCF2 1 0 :1:6 
 ]
+<<<<<<< HEAD
 [u S40 . 1 `S26 1 . 1 0 `S32 1 . 1 0 ]
 [v _OSCCONbits OSCCONbits `VES40  1 e 1 @4051 ]
 "5 C:\Users\Mari\Documents\GitHub\ARQCB\ADC\adc.X\adc_pot.c
 [v _main main `(v  1 e 1 0 ]
 {
 "22
+=======
+[u S37 . 1 `S23 1 . 1 0 `S29 1 . 1 0 ]
+[v _OSCCONbits OSCCONbits `VES37  1 e 1 @4051 ]
+"5 C:\Users\ASUS\Documents\GitHub\ARQCB\ADC\adc.X\adc_pot.c
+[v _main main `(v  1 e 1 0 ]
+{
+"24
+>>>>>>> 52d139fa3ee4e18d1a24ab34a3c8c66ff3bc03e8
 } 0
