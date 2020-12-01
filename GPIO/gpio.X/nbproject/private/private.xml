@@ -2,6 +2,15 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+<<<<<<< HEAD
         <group/>
+=======
+        <group>
+            <file>file:/C:/Users/Mari/Documents/GitHub/ARQCB/GPIO/gpio.X/pinout.h</file>
+            <file>file:/C:/Users/Mari/Documents/GitHub/ARQCB/GPIO/gpio.X/gpio_main.c</file>
+            <file>file:/C:/Users/Mari/Documents/GitHub/ARQCB/GPIO/gpio.X/fuses.h</file>
+            <file>file:/C:/Users/Mari/Documents/GitHub/ARQCB/GPIO/gpio.X/secuencia_main.c</file>
+        </group>
+>>>>>>> d5a106fbc875f03bb62e632772d1d08a7c0e2ace
     </open-files>
 </project-private>
